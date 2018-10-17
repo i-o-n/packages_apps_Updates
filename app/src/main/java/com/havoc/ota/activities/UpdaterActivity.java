@@ -672,7 +672,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                                     tryToStartDownload();
                                 }
                             })
-                    .setNegativeButton(android.R.string.cancel, null)
+                    .setNegativeButton(R.string.cancel, null)
                     .show();
 
         } else {
@@ -703,7 +703,7 @@ public class UpdaterActivity extends PreferenceActivity implements
         new AlertDialog.Builder(this)
                 .setTitle(R.string.confirm_download_cancel_dialog_title)
                 .setMessage(R.string.confirm_download_cancel_dialog_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (!tmpZip.isFile() || tmpZip.delete()) {
@@ -716,7 +716,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                         }
                     }
                 })
-                .setNegativeButton(android.R.string.cancel, null)
+                .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
@@ -731,7 +731,7 @@ public class UpdaterActivity extends PreferenceActivity implements
         new AlertDialog.Builder(this)
                 .setTitle(R.string.confirm_download_cancel_dialog_title)
                 .setMessage(R.string.confirm_download_cancel_dialog_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // Set the preference back to new style
@@ -750,7 +750,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                         showToast(getString(R.string.download_cancelled), Toast.LENGTH_SHORT);
                     }
                 })
-                .setNegativeButton(android.R.string.cancel, null)
+                .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
@@ -827,7 +827,7 @@ public class UpdaterActivity extends PreferenceActivity implements
         new AlertDialog.Builder(this)
                 .setTitle(R.string.confirm_delete_dialog_title)
                 .setMessage(R.string.confirm_delete_all_dialog_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // We are OK to delete, trigger it
@@ -835,7 +835,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                         updateLayout(false);
                     }
                 })
-                .setNegativeButton(android.R.string.cancel, null)
+                .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
@@ -999,7 +999,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                     new AlertDialog.Builder(mActivityRef.get())
                             .setTitle(R.string.md5_failed_dialog_title)
                             .setMessage(mActivityRef.get().getString(R.string.md5_failed_dialog_message))
-                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     if (Utils.isABDevice()) {
@@ -1009,7 +1009,7 @@ public class UpdaterActivity extends PreferenceActivity implements
                                     }
                                 }
                             })
-                            .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                            .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     // Do nothing and allow the dialog to be dismissed

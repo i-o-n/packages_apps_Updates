@@ -15,7 +15,7 @@
         android:id="@+android:id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:layout_marginStart="56dp" />
 
 </LinearLayout>

@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
-    android:foreground="?android:attr/selectableItemBackground"
+    android:selectable="false"
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:paddingEnd="16dp"
@@ -35,7 +35,7 @@
         android:ellipsize="end"
         android:maxLines="2"
         android:paddingEnd="32dp"
-        android:paddingStart="32dp"
+        android:paddingStart="56dp"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="16sp" />
 
@@ -46,38 +46,40 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/title"
         android:maxLines="3"
-        android:paddingBottom="10sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
         android:paddingEnd="32dp"
-        android:paddingStart="32dp"
+        android:paddingStart="56dp"
         android:textAppearance="@android:style/TextAppearance.Material.Body1"
         android:textColor="?android:attr/textColorSecondary" />
 
     <Button
         android:id="@+id/button"
-        style="@style/SuwGlifButton.Secondary"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/summary"
-        android:drawablePadding="5dp"
-        android:drawableStart="@drawable/ic_tab_download"
+        android:textColor="?android:attr/textColorSecondary"
         android:text="@string/download_button" />
 
     <Button
         android:id="@+id/changelog_button"
-        style="@style/SuwGlifButton.Secondary"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/summary"
-        android:drawablePadding="5dp"
-        android:drawableStart="@drawable/ic_chevron_down"
+        android:layout_marginStart="45dp"
+        android:drawablePadding="4dp"
+        android:drawableEnd="@drawable/ic_chevron_down"
+        android:textColor="?android:attr/textColorSecondary"
         android:text="@string/changelog_button" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/changelog_button">
+        android:layout_below="@id/changelog_button"
+        android:paddingStart="56dp">
 
         <net.cachapa.expandablelayout.ExpandableLayout
             android:id="@+id/expandableChangelogLayout"
@@ -108,19 +110,18 @@
         android:layout_alignStart="@id/summary"
         android:layout_below="@id/summary"
         android:paddingBottom="3dp"
-        android:paddingEnd="32dp"
-        android:paddingStart="32dp"
+        android:paddingEnd="14dp"
+        android:paddingStart="56dp"
         android:visibility="gone" />
 
     <Button
         android:id="@+id/updates_button"
-        style="@style/SuwGlifButton.Secondary"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/download_progress_bar"
-        android:drawablePadding="5dp"
-        android:drawableStart="@drawable/ic_tab_cancel"
         android:text="@android:string/cancel"
+        android:textColor="?android:attr/textColorSecondary"
         android:visibility="gone" />
 </RelativeLayout>

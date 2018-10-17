@@ -39,11 +39,11 @@ public class RebootHelper {
         builder.setView(checkboxDeleteAfterInstallView);
         builder.setTitle(R.string.reboot_title);
         builder.setMessage(String.format(context.getResources().getString(R.string.reboot_message),filename));
-        builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener(){
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener(){
             @Override
             public void onClick(DialogInterface dialog, int which){}
         });
-        builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener(){
+        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener(){
             @Override
             public void onClick(DialogInterface dialog, int which){}
         });
@@ -94,7 +94,7 @@ public class RebootHelper {
                 dialog.dismiss();
             }
         });
-        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 dialog.dismiss();
             }
@@ -112,13 +112,13 @@ public class RebootHelper {
             builder.setCancelable(false);
             builder.setTitle(R.string.wipe_data_dialog_confirmation_title);
             builder.setMessage(R.string.wipe_data_dialog_confirmation_message);
-            builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
                     reboot(context, filename, parentDialog);
                     dialog.dismiss();
                 }
             });
-            builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
                     dialog.dismiss();
                 }
@@ -154,7 +154,7 @@ public class RebootHelper {
             AlertDialog.Builder alert = new AlertDialog.Builder(context);
             alert.setTitle(R.string.reboot_failed_title);
             alert.setMessage(String.format(context.getResources().getString(R.string.reboot_failed_message), filename));
-            alert.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 
                 public void onClick(DialogInterface dialog, int whichButton) {
                     dialog.dismiss();

@@ -126,7 +126,7 @@ public class UpdatePreference extends Preference implements OnLongClickListener 
         expandableChangelogLayout.setOnExpansionUpdateListener(new ExpandableLayout.OnExpansionUpdateListener() {
             @Override
             public void onExpansionUpdate(float expansionFraction, int state) {
-                mChangelogButton.setCompoundDrawablesWithIntrinsicBounds(mContext.getResources().getDrawable(state != 0 ? R.drawable.ic_chevron_up : R.drawable.ic_chevron_down, mContext.getTheme()), null, null, null);
+                mChangelogButton.setCompoundDrawablesWithIntrinsicBounds(null, null, mContext.getResources().getDrawable(state != 0 ? R.drawable.ic_chevron_up : R.drawable.ic_chevron_down, mContext.getTheme()), null);
             }
         });
         TextView mChangelogText = view.findViewById(R.id.changelog_text);
@@ -184,7 +184,7 @@ public class UpdatePreference extends Preference implements OnLongClickListener 
         new AlertDialog.Builder(getContext())
                 .setTitle(R.string.confirm_delete_dialog_title)
                 .setMessage(R.string.confirm_delete_dialog_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // We are OK to delete, trigger it
@@ -193,7 +193,7 @@ public class UpdatePreference extends Preference implements OnLongClickListener 
                         }
                     }
                 })
-                .setNegativeButton(android.R.string.cancel, null)
+                .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
