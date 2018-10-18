@@ -70,8 +70,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/summary"
         android:layout_marginStart="45dp"
-        android:drawablePadding="4dp"
-        android:drawableEnd="@drawable/ic_chevron_down"
         android:textColor="?android:attr/textColorSecondary"
         android:text="@string/changelog_button" />
 

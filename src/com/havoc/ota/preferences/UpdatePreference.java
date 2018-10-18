@@ -22,6 +22,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -120,7 +121,7 @@ public class UpdatePreference extends Preference implements OnLongClickListener 
         mChangelogButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                expandableChangelogLayout.toggle();
+				showchangelog();
             }
         });
         expandableChangelogLayout.setOnExpansionUpdateListener(new ExpandableLayout.OnExpansionUpdateListener() {
@@ -178,6 +179,20 @@ public class UpdatePreference extends Preference implements OnLongClickListener 
                 break;
         }
         return true;
+    }
+
+    private void showchangelog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
+        builder.setTitle(R.string.changelog_title);
+		builder.setView(inflater.inflate(R.layout.preference_changelog, null))
+            .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+                }
+            });
+        builder.create();
+        builder.show();
     }
 
     private void confirmDelete() {
