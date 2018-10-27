@@ -31,7 +31,7 @@ public class Constants {
     public static final long UPDATE_DEFAULT_FREQ = AlarmManager.INTERVAL_HALF_DAY;
     // Build vars
     public static final String CURRENT_DEVICE_NAME = "ro.havoc.device";
-    public static final String CURRENT_VERSION = "ro.havoc.version";
+    public static final String CURRENT_VERSION = "ro.mod.version";
     public static final String CURRENT_BUILD_TYPE = "ro.havoc.releasetype";
     public static final String OTA_URL = "https://raw.githubusercontent.com/Havoc-OS/OTA/pie/%s";
     // Expressions
