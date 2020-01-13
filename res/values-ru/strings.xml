@@ -51,16 +51,16 @@
     <!-- General -->
     <string name="update_found_notification">Доступно новое обновление</string>
     <string name="snack_no_updates_found">Новые обновления не найдены</string>
-    <string name="snack_updates_check_failed">Проверка обновлений не удалась. Пожалуйста, проверьте подключение к Интернету и повторите попытку позже.</string>
-    <string name="snack_download_failed">Загрузка не удалась. Пожалуйста, проверьте подключение к Интернету и повторите попытку позже.</string>
-    <string name="snack_download_verification_failed">Проверка обновления не удалась.</string>
-    <string name="snack_download_verified">Загрузка завершена.</string>
-    <string name="snack_update_not_installable">Это обновление не может быть установлено поверх текущей сборки.</string>
+    <string name="snack_updates_check_failed">Проверка обновлений не удалась. Пожалуйста, проверьте подключение к Интернету и повторите попытку позже</string>
+    <string name="snack_download_failed">Загрузка не удалась. Пожалуйста, проверьте подключение к Интернету и повторите попытку позже</string>
+    <string name="snack_download_verification_failed">Проверка обновления не удалась</string>
+    <string name="snack_download_verified">Загрузка завершена</string>
+    <string name="snack_update_not_installable">Это обновление не может быть установлено поверх текущей сборки</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> (<xliff:g example="3 minutes left" id="eta">%3$s</xliff:g>) • <xliff:g example="56" id="percentage">%4$s</xliff:g></string>
     <string name="list_verifying_update">Подтверждение обновления</string>
-    <string name="list_no_updates">Новых обновлений не найдено. Чтобы вручную проверить наличие новых обновлений, используйте кнопку «Обновить».</string>
+    <string name="list_no_updates">Новых обновлений не найдено. Чтобы вручную проверить наличие новых обновлений, используйте кнопку «Обновить»</string>
     <string name="blocked_update_dialog_title">Обновление заблокировано</string>
 
     <!-- Actions -->
@@ -81,8 +81,8 @@
 
     <!-- Installation -->
     <string name="apply_update_dialog_title">Применить обновление</string>
-    <string name="apply_update_dialog_message">Вы собираетесь перейти на <xliff:g id="update_name">%1$s</xliff:g>.\n\nесли вы нажмете <xliff:g id="ok">%2$s</xliff:g>,устройство перезагрузится в режиме Рекавери, чтобы установить обновление.\n\nПримечание: эта функция требует совместимого Рекавери или обновление должно быть установлено вручную.</string>
-    <string name="apply_update_dialog_message_ab">Вы собираетесь перейти на <xliff:g id="update_name">%1$s</xliff:g>.\n\nесли вы нажмете <xliff:g id="ok">%2$s</xliff:g>, устройство начнет установку в фоновом режиме.\n\nПосле завершения вам будет предложено перезагрузиться.</string>
+    <string name="apply_update_dialog_message">Вы собираетесь перейти на <xliff:g id="update_name">%1$s</xliff:g>.\n\nесли вы нажмете <xliff:g id="ok">%2$s</xliff:g>,устройство перезагрузится в режиме Рекавери, чтобы установить обновление.\n\nПримечание: эта функция требует совместимого Рекавери или обновление должно быть установлено вручную</string>
+    <string name="apply_update_dialog_message_ab">Вы собираетесь перейти на <xliff:g id="update_name">%1$s</xliff:g>.\n\nесли вы нажмете <xliff:g id="ok">%2$s</xliff:g>, устройство начнет установку в фоновом режиме.\n\nПосле завершения вам будет предложено перезагрузиться</string>
     <string name="cancel_installation_dialog_message">Отменить установку?</string>
     <string name="installing_update">Установка пакета обновления</string>
     <string name="installing_update_error">Ошибка установки</string>
@@ -91,7 +91,7 @@
     <string name="preparing_ota_first_boot">Подготовка к первой загрузке</string>
     <string name="dialog_prepare_zip_message">Предварительная подготовка к обновлению</string>
     <string name="dialog_battery_low_title">Низкий заряд батареи</string>
-    <string name="dialog_battery_low_message_pct">Уровень заряда батареи слишком низкий, нужно как минимум <xliff:g id="percent_discharging">%1$d</xliff:g>%% батареи, чтобы продолжить, <xliff:g id="percent_charging">%2$d</xliff:g>%% если заряжается.</string>
+    <string name="dialog_battery_low_message_pct">Уровень заряда батареи слишком низкий, нужно как минимум <xliff:g id="percent_discharging">%1$d</xliff:g>%% батареи, чтобы продолжить, <xliff:g id="percent_charging">%2$d</xliff:g>%% если заряжается</string>
 
     <!-- Export update -->
     <string name="dialog_export_title">Экспорт обновления</string>
